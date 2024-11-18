@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 </head>
 <body>
+<div class="header">
+<center><h2>Red Hat One Lean Coffee</h2> </center>
+</div>
 
 <div id="centerDiv">
 <h2>Thank you! Your votes have been submitted</h2> 

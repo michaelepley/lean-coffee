@@ -14,7 +14,6 @@ if ($value == "true") {
 }
 
 $qq2 = "UPDATE sliders_runs SET totalvotes = totalvotes + 1 WHERE hash = '" . $_REQUEST['hash'] . "'";
-#print $qq2;
 
 $result2 = pg_query($db, $qq2);
 

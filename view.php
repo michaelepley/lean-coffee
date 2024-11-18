@@ -14,10 +14,12 @@
 <script src="js/jquery.ui.labeledslider.js"></script>
 </head>
 <body>
+<div class="header">
+<center><h2>Red Hat One Lean Coffee</h2> </center>
+</div>
 
-<div id="content">
-<center><h2>Red Hat One Lean Coffee - Results</h2> </center>
-<div id="centerDiv">
+
+<div id="centerDiv2">
 
 <?php
 if (!isset($_REQUEST['hash'])) {
@@ -54,29 +56,19 @@ foreach ($rowQuestion as $topic => $value) {
 for ($ii = 0; $ii < count($topics); $ii++) {
 	$tt = $topics[$ii];
 	$scoreArray[$tt] = $topicsScores[$ii];
-#	Print "Topic: $topics[$ii] Score: $topicsScores[$ii]<br>";
   }
 
 
-#print_r($scoreArray);
-#print "<br><br>";
 arsort($scoreArray);
-#print_r($scoreArray);
-## Print a table of the results
-print '<div class="wrapper"><div class="table">
-<div class="row header">
-	<div class="cell">Topic</div>
-	<div class="cell">Score</div>
-</div><tbody>';
+
 
 foreach ($scoreArray as $topicName => $topicScore) {
-#	print "<tr><td>$topicName</td><td>$topicScore</td></tr>";
 	print "<div class='row'><div class='cell'>$topicName</div><div class='cell'>$topicScore</div></div>";
 }
 
 print "</tbody></table>";
 print "</div></div";
 ?>
-
+</div>
 </body>
 </html>

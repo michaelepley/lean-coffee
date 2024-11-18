@@ -1,6 +1,5 @@
   body {
 	margin-top:10px;
-	margin-left:250px;
 	font-family: 'overpass';
   }
 
@@ -11,8 +10,17 @@
 #centerDiv {
 	margin: auto;
    text-align: center;
+   padding-top: 50px;
+}
+
+#centerDiv2 {
+	margin: auto;
+   text-align: center;
+   padding-top: 50px;
+   width: 50%;
 
 }
+
 
   #eq  {
     width:100%; 
@@ -450,3 +458,23 @@ input.underlined
 	font-size: x-large;
   }
 
+  .footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-top: #000;
+	border-color: #000000;
+	color: white;
+	text-align: center;
+  }
+
+  .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	background-color: #ff0000;
+	color: #ffffff;
+  }

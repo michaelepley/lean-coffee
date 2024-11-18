@@ -36,8 +36,9 @@ function copyToClipboard(element) {
 </head>
 <body>
 
-
+<div class="header">
 <center><h2>Red Hat One Lean Coffee</h2> </center>
+</div>
 <?php
 if (isset($_REQUEST['hash'])) {
 include_once 'dbconnect.php';
@@ -58,25 +59,11 @@ while($row = pg_fetch_assoc($result1)) {
 
 	$link = "http://" . $_SERVER['HTTP_HOST'] . "/lean-coffee/vote.php?hash=" . $_REQUEST['hash'];
 
-print "<div id=\"centerDiv\"><h3>Link:</h3><p id='linkText'> <a href=vote.php?hash=" . $_REQUEST['hash'] . " target=_blank >" . $link . "</a></p>" ;
-
+print "<div id=\"centerDiv\"><br><p id='linkText'> <a href=vote.php?hash=" . $_REQUEST['hash'] . " target=_blank >" . $link . "</a></p>" ;
 print '<img src="https://api.qrserver.com/v1/create-qr-code/?data=' . $link . '&amp;size=500x500" alt="" title="" /><br>';
-
-
-print '<button class="ui-button ui-widget ui-corner-all" onclick="copyToClipboard(\'#linkText\')">Copy URL</button>&nbsp&nbsp&nbsp';
-
+print '<br><button class="ui-button ui-widget ui-corner-all" onclick="copyToClipboard(\'#linkText\')">Copy URL</button>&nbsp&nbsp&nbsp';
 print "<a target=_blank href=\"view.php?hash=" . $_REQUEST['hash'] . "\"class=\"ui-button ui-widget ui-corner-all\" type=\"submit\" value=\"View Results\" >View Results</a>&nbsp&nbsp&nbsp";
-
 print "<a href=\"index.php\" class=\"ui-button ui-widget ui-corner-all\" type=\"submit\" value=\"Start Again\" >Start Again</a>";
-
-## Topic Table
-#print "<div class=boxy><h3>Chosen Topics</h3>";
-#print "  <ol class='rounded-list'>";
-#
-#	for ($x = 1; $x <= 10; $x++) {
-#	  print "<li><a href=#>" . $rowTopic[$rowQuestion['q' . $x]] . "</a></li>";		
-#}		
-#print "<ol></div>";
 print "</div>";
 exit();
 }

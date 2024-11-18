@@ -30,6 +30,10 @@
 
 </head>
 <body>
+<div class="header">
+<center><h2>Red Hat One Lean Coffee</h2> </center>
+</div>
+
 <div id="content">
 <center><h2>Red Hat One Lean Coffee - Voting Time!</h2> </center>
 <div class="widget">
@@ -62,8 +66,6 @@ while($row = pg_fetch_assoc($result1)) {
 print "  <ol class='rounded-list'>";
 $i = 1;
 	for ($x = 1; $x <= 10; $x++) {
-#	  print "<li><a href=#>" . $rowTopic[$rowQuestion['q' . $x]] . "</a></li>";		
-#    print '<li><input type="checkbox" name="' . "q" . $i . '" id="' . "q" . $i . '" value="' . $row['id'] . '"><label for="' . "q" . $i . '">' . $rowTopic[$rowQuestion['q' . $x]] . '&nbsp </label></li>'. "\n";
     print '<li><input type="checkbox" name="' . "q" . $i . '" id="' . "q" . $i . '" value="true"><label for="' . "q" . $i . '">' . $rowTopic[$rowQuestion['q' . $x]] . '&nbsp </label></li>'. "\n";
 
     $i++;
