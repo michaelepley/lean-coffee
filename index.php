@@ -57,7 +57,7 @@ while($row = pg_fetch_assoc($result1)) {
 	$rowTopic[$id] = $topic;
 }	
 
-	$link = "http://" . $_SERVER['HTTP_HOST'] . "/lean-coffee/vote.php?hash=" . $_REQUEST['hash'];
+	$link = "http://" . $_SERVER['HTTP_HOST'] . "/vote.php?hash=" . $_REQUEST['hash'];
 
 print "<div id=\"centerDiv\"><br><p id='linkText'> <a href=vote.php?hash=" . $_REQUEST['hash'] . " target=_blank >" . $link . "</a></p>" ;
 print '<img src="https://api.qrserver.com/v1/create-qr-code/?data=' . $link . '&amp;size=500x500" alt="" title="" /><br>';
