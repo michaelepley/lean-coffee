@@ -39,25 +39,26 @@ INSERT INTO public.sliders_topics VALUES (25, 'Interagency Collaboration', NULL 
 INSERT INTO public.sliders_topics VALUES (26, 'NIS2 (EMEA only)', NULL );
 INSERT INTO public.sliders_topics VALUES (27, 'SELinux', NULL );
 INSERT INTO public.sliders_topics VALUES (28, 'FIPS', NULL );
-INSERT INTO public.sliders_topics VALUES (29, 'Common Criteria', NULL );
-INSERT INTO public.sliders_topics VALUES (30, 'CSfC', NULL );
-INSERT INTO public.sliders_topics VALUES (31, 'Disconnected operations', NULL );
-INSERT INTO public.sliders_topics VALUES (32, 'Identity And Access Management', NULL );
-INSERT INTO public.sliders_topics VALUES (33, 'Signing and Attestation', NULL );
-INSERT INTO public.sliders_topics VALUES (34, 'Credentialing ', NULL );
-INSERT INTO public.sliders_topics VALUES (35, 'Inventory and Fleet Management', NULL );
-INSERT INTO public.sliders_topics VALUES (36, 'Key Management', NULL );
-INSERT INTO public.sliders_topics VALUES (37, 'PKI', NULL );
-INSERT INTO public.sliders_topics VALUES (38, 'Post Quantum Cryptography (PQC) / Quantum Ready Cryptography', NULL );
-INSERT INTO public.sliders_topics VALUES (39, 'SOMs (SBOMs/HBOMs/AIBOMs)', NULL );
-INSERT INTO public.sliders_topics VALUES (40, 'Supply Chain Risk Management', NULL );
-INSERT INTO public.sliders_topics VALUES (41, 'Secure Software Development Framework (SSDF)', NULL );
-INSERT INTO public.sliders_topics VALUES (42, 'Secure-by-Default', NULL );
-INSERT INTO public.sliders_topics VALUES (43, 'Secure-by-Design', NULL );
-INSERT INTO public.sliders_topics VALUES (44, 'Threat Intelligence / Threat Monitoring', NULL );
-INSERT INTO public.sliders_topics VALUES (45, 'Threat Intelligence Sharing', NULL );
-INSERT INTO public.sliders_topics VALUES (46, 'Critical Infrastructure', NULL );
-INSERT INTO public.sliders_topics VALUES (47, 'Adversarial Testing / Penetration Testing', NULL );
+INSERT INTO public.sliders_topics VALUES (29, 'SCAP (OVAL, etc)', NULL );
+INSERT INTO public.sliders_topics VALUES (30, 'Common Criteria', NULL );
+INSERT INTO public.sliders_topics VALUES (31, 'CSfC', NULL );
+INSERT INTO public.sliders_topics VALUES (32, 'Disconnected operations', NULL );
+INSERT INTO public.sliders_topics VALUES (33, 'Identity And Access Management', NULL );
+INSERT INTO public.sliders_topics VALUES (34, 'Signing and Attestation', NULL );
+INSERT INTO public.sliders_topics VALUES (35, 'Credentialing ', NULL );
+INSERT INTO public.sliders_topics VALUES (36, 'Inventory and Fleet Management', NULL );
+INSERT INTO public.sliders_topics VALUES (37, 'Key Management', NULL );
+INSERT INTO public.sliders_topics VALUES (38, 'PKI', NULL );
+INSERT INTO public.sliders_topics VALUES (39, 'Post Quantum Cryptography (PQC) / Quantum Ready Cryptography', NULL );
+INSERT INTO public.sliders_topics VALUES (40, 'SOMs (SBOMs/HBOMs/AIBOMs)', NULL );
+INSERT INTO public.sliders_topics VALUES (41, 'Supply Chain Risk Management', NULL );
+INSERT INTO public.sliders_topics VALUES (42, 'Secure Software Development Framework (SSDF)', NULL );
+INSERT INTO public.sliders_topics VALUES (43, 'Secure-by-Default', NULL );
+INSERT INTO public.sliders_topics VALUES (44, 'Secure-by-Design', NULL );
+INSERT INTO public.sliders_topics VALUES (45, 'Threat Intelligence / Threat Monitoring', NULL );
+INSERT INTO public.sliders_topics VALUES (46, 'Threat Intelligence Sharing', NULL );
+INSERT INTO public.sliders_topics VALUES (47, 'Critical Infrastructure', NULL );
+INSERT INTO public.sliders_topics VALUES (48, 'Adversarial Testing / Penetration Testing', NULL );
 
 --
 -- Name: sliders_runs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: leancoffee
@@ -70,6 +71,6 @@ SELECT pg_catalog.setval('public.sliders_runs_id_seq', 4, true);
 -- Name: sliders_topics_id_seq; Type: SEQUENCE SET; Schema: public; Owner: leancoffee
 --
 
-SELECT pg_catalog.setval('public.sliders_topics_id_seq', 48, true);
+SELECT pg_catalog.setval('public.sliders_topics_id_seq', 49, true);
 
 
